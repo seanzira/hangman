@@ -56,6 +56,11 @@ const Hangman = () => {
     setStatus('Playing');
   };
 
+  //help message
+  const showHelpMessage = () => {
+    alert("Your objective is to guess the hidden word, one letter at a time. You have a limited amount of guesses before losing the game. Each letter you guess correctly, will be displayed in the correct position in the hidden word. Each incorrect guess results in another part being added to the hangman figure, representing the remaining guesses");
+  };
+
   return (
     <div className="game-container">
       <HangmanWord word={word} guesses={guesses} />
