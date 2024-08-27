@@ -1,0 +1,142 @@
+/*style for the body of the game*/
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #dfe9f3);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  /*style for the game container*/
+  .app {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+  }
+  
+  /*style for the word the user has to guess*/
+  .hangman-word {
+    font-size: 40px;
+    letter-spacing: 12px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #fff, #e0e0e0);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  /*style for the letters the user has to choose from*/
+  .letter {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 2px solid #7f8c8d;
+    border-radius: 8px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+
+  /*style for the letter button*/
+  .hangman-buttons {
+    margin: 20px 0;
+  }
+  
+  /*styles for each letter button*/
+  .hangman-buttons button {
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /*style for the letter buttons when hovered over*/
+  .hangman-buttons button:hover {
+    background: linear-gradient(145deg, #2980b9, #3498db);
+    transform: scale(1.1);
+  }
+  
+  /*style for the button when clicked*/
+  .hangman-buttons button:active {
+    background: linear-gradient(145deg, #1f5f8a, #1f77b4);
+    transform: scale(0.9);
+  }
+  
+  /*style for the status of the game*/
+  .hangman-status {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  /*style for the hangman status button*/
+  .hangman-status button {
+    background: #27ae60;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /*style for the status button when hovered over*/
+  .hangman-status button:hover {
+    background: #2ecc71;
+    transform: scale(1.1);
+  }
+  
+  /*style for the status button when clicked*/
+  .hangman-status button:active {
+    background: #1e8449;
+    transform: scale(0.9);
+  }
+  
+
+  /*design for a smailler screen*/
+  @media (max-width: 600px) {
+    .hangman-word {
+      font-size: 32px;
+      letter-spacing: 8px;
+    }
+  
+    /*style for the individual letters*/
+    .letter {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+  
+    /*style for the hangman buttons*/
+    .hangman-buttons button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    /*style for the restart button*/
+    .hangman-status button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
