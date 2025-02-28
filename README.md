@@ -1,15 +1,58 @@
-## Hangman Rules
-* Your objective is to guess the hidden word, one letter at a time
-* You have a limited amount of guesses before losing the game.
-* Each letter you guess correctly, will be displayed in the correct position in the hidden word.
-* Each incorrect guess results in another part being added to the hangman figure, representing the remaining guesses
+# Hangman-Game
 
-## Installation process
-* The user should create a folder on their local machine called hangman (or anything they'd like)
-* They should open that folder on their task file and type cmd where the folder path is located.
-* Once you've been redirected to the command prompt, you should type "npx create-react-app hangman" which creates the app for you.
-* Once created, navigate to the new folder within the one you created.
-* Within that folder, you will find an src file, open it paste the Hangman.css, Hangman.js, HangmanWord.js, HangmanButtons.js, HangmanStatus.js, and Words.js files into that folder.
-* Alter the App.js file to look exactly like the App.js file within this folder.
-* Once complete, return to the command prompt and type "npm start"
-* The user will then be redirected to a webpage on a new tab where the game will be displayed and they can play.
+Hangman-Game is an interactive web application where players guess a hidden word by selecting letters. With limited incorrect guesses allowed, the goal is to uncover the word before running out of chances.
+
+# Table of contents
+- [Project Details](#project-details)
+- [Features](#features)
+- [Usage](#usage)
+- [Installation](#installation)
+- [License](#license)
+- [Contact](#contact)
+
+## Project Details
+
+This project implements a classic Hangman game with a simple user interface. Players are challenged to guess the hidden word by selecting letters from a given set. The game ends when the player either guesses the word or exhausts the allowed number of wrong guesses.
+
+## Features
+
+- **Guess the Word**: Players try to uncover the hidden word by choosing letters.
+- **Limited Incorrect Guesses**: The player has a limited number of wrong guesses before the game ends.
+- **Simple UI**: User-friendly design for an enjoyable experience.
+- **Real-time Feedback**: The game provides real-time updates on incorrect and correct guesses.
+
+## Usage
+Upon launching the application, players will:
+
+1. See a series of blank spaces representing the hidden word.
+2. Choose from a set of letters.
+3. Receive feedback on whether their guess was correct or incorrect.
+4. Continue guessing until they either solve the word or exhaust their wrong guesses.
+
+## Installation
+To get the game running on your local machine, follow these steps:
+
+1. **Download the Project Files**
+  Clone the repository or download the project as a ZIP file. If using Git, run:
+   ```bash
+   git clone https://github.com/username/hangman-game.git
+2. **Navigate to the Project Directory**
+   Type:
+   ```bash
+   cd hangman-game
+3. **Install dependencies**
+   Run the following command to install all the necessary dependencies:: 
+   ```bash
+   npm install
+4. **Start the game**
+   After the installation completes, start the application by typing:
+   ```bash
+   npm start
+
+## License
+Hangman is licensed under the HyperionDev License. See the LICENSE file for more information.
+
+## Contact
+For questions, suggestions, or feedback, please reach out to:
+
+Email: seanzira2401@gmail.com
